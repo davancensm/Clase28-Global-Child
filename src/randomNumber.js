@@ -1,12 +1,4 @@
-//lo pongo a escuchar un evento
-//el evento message me va a permitir escuchar cualquier comunicacion EXTERNA
-//RECIBE UN CALLBACK, QUE VA A RECIBIR EL MENSAJE POR ESO LE VOY A PONR PARENTMESSAGE
-
-
-
-
-
-let randomFunction = () => {
+let randomNumber = () => {
   let obj = {};
   let randomNumber;
   process.on('message', (parentMsg) => {
@@ -26,4 +18,4 @@ let randomFunction = () => {
   })
 }
 
-randomFunction()
+randomNumber()
